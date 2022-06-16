@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link href="feedback1.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Feedback Form</h1>
+      <hr />
+      <div class="inside-container">
+      <h2>Please give your feedback below !!</h2>
+      <form action="action_page.php">
+        <label for="fname" >First Name :</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+          required
+        />
+        <br />
+        <label for="lname" >Last Name :</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <h3 class="mt-4">How do you rate your overall exeperience?</h3>
+        <label class="radio-inline"
+          ><input
+            type="radio"
+            name="exeperience"
+            value="Excellentlent"
+          />Execellent</label
+        >
+        <label class="radio-inline"
+          ><input type="radio" name="exeperience" value="Good" />Good</label
+        >
+        <label class="radio-inline"
+          ><input
+            type="radio"
+            name="exeperience"
+            value="Avarage"
+          />Avarage</label
+        >
+        <label class="radio-inline"
+          ><input type="radio" name="exeperience" value="Poor" />Poor</label
+        >
+        <br />
+        <h3 class="mt-4">Do you find the given links helpful?</h3>
+        <label class="radio-inline"
+          ><input type="radio" name="exeperience" value="Yes" />Yes</label
+        >
+        <label class="radio-inline"
+          ><input type="radio" name="exeperience" value="No" />No</label
+        >
+        <br />
+        <label class="col-md-8" 
+          ><h4>Message</h4>
+          <textarea
+            id="message"
+            required=""
+            palceholder="Write your message here"
+            cols="48"
+            rows="6"
+          ></textarea>
+        </label>
+        <br />
+        <input type="submit" value="Submit" id="submit" />
+      </div>
+      </form>
+    </div>
+  </body>
+</html>
